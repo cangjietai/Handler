@@ -23,7 +23,8 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
             switch (msg.what) {
                 case UPDATE_TEXT:
                     // 在这里进行UI操作
-                    text.setText("Nice to meet you");
+                    text.setText("How are you");
+                    System.out.println("dev分支添加一句话");
                     break;
                 default:
                     break;
@@ -50,6 +51,8 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
                         Message message = new Message();
                         message.what = UPDATE_TEXT;
                         handler.sendMessage(message);
+                        System.out.println("hello you");
+                        System.out.println("dev分支添加第二句话");
                     }
                 }).start();
                 break;
